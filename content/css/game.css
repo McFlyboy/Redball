@@ -1,0 +1,56 @@
+body {
+	overflow: hidden;
+	font-family: consolas;
+}
+#target {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	left: 50%;
+	bottom: 50%;
+	cursor: pointer;
+}
+#inner-timer {
+	position: absolute;
+	border-radius: 50px;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+#score {
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	font-size: 35px;
+}
+h1 {
+	position: fixed;
+	width: 100%;
+	top: 30%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 900;
+}
+#back-button {
+	position: fixed;
+	left: 50%;
+	top: 90%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	font-size: 25px;
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 15px;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+#back-button:hover {
+	padding: 20px;
+}
