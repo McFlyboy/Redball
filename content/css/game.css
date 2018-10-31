@@ -38,6 +38,13 @@ h1 {
 	font-size: 50px;
 	font-weight: 900;
 }
+#highscore {
+	position: fixed;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	top: 60%;
+}
 #back-button {
 	position: fixed;
 	left: 50%;

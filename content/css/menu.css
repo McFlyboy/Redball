@@ -1,15 +1,20 @@
 body {
-	position: relative;
-	top: 250px;
 	font-family: consolas;
-	text-align: center;
+	overflow: hidden;
 }
 h1 {
+	position: fixed;
+	width: 100%;
+	top: 28%;
+	text-align: center;
 	font-size: 100px;
 	font-weight: 900;
-	margin-bottom: 100px;
 }
 .button {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	font-size: 35px;
 	text-decoration: none;
 	padding: 25px;
@@ -19,4 +24,11 @@ h1 {
 }
 .button:hover {
 	padding: 30px;
+}
+#highscore {
+	position: fixed;
+	width: 100%;
+	top: 70%;
+	text-align: center;
+	font-size: 30px;
 }
