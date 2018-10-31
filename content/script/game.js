@@ -3,6 +3,7 @@ const target = document.getElementById("target");
 const innerTimer = document.getElementById("inner-timer");
 const scoreText = document.getElementById("score");
 const infoText = document.getElementsByTagName("h1")[0];
+const retryText = document.getElementById("retry");
 const highscoreText = document.getElementById("highscore");
 const backButton = document.getElementById("back-button");
 document.body.style.backgroundColor = bgColor;
@@ -30,6 +31,7 @@ function hitTarget() {
 	if(gameState != gameStates.RUN){
 		gameState = gameStates.RUN;
 		infoText.innerHTML = "";
+		retryText.innerHTML = "";
 		highscoreText.innerHTML = "";
 		backButton.style.display = "none";
 		score = 0;
@@ -41,6 +43,9 @@ function hitTarget() {
 	lastClickTime = new Date().getTime();
 }
 function setGameOver() {
+	gameState = gameStates.GAME_OVER;
+	infoText.innerHTML = "GAME OVER";
+	retryText.innerHTML = "Click the dot to retry";
 	const lastHighscore = getCookie("highscore");
 	if(lastHighscore === "") {
 		setCookie("highscore", score, 30);
@@ -56,8 +61,6 @@ function setGameOver() {
 			highscoreText.innerHTML = "High-score: " + lastHighscoreInt;
 		}
 	}
-	gameState = gameStates.GAME_OVER;
-	infoText.innerHTML = "GAME OVER";
 	backButton.style.display = "block";
 	target.style.left = "50%";
 	target.style.bottom = "50%";
