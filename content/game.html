@@ -10,13 +10,25 @@
 		<title>Redball. Game</title>
 	</head>
 	<body>
+		<!-- Title that displays "GAME OVER" after playing -->
 		<h1>Click the dot!</h1>
+		
+		<!-- The target the player is supposed to hit within the timelimit -->
 		<div id="target" onmousedown="hitTarget()">
+		
+			<!-- Timer display -->
 			<div id="inner-timer"></div>
+			
+			<!-- Current score -->
 			<p id="score"></p>
 		</div>
+		
+		<!-- Retry info-text -->
 		<p id="retry"></p>
+		
+		<!-- Status about high score -->
 		<p id="highscore"></p>
+		
 		<a id="back-button" href="index.html">Back to Menu</a>
 		<script src="script/game.js"></script>
 	</body>

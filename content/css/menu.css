@@ -1,3 +1,6 @@
+/* Coloring is not done in CSS. It is automated in JavaScript */
+
+/* Disables scrolling */
 body {
 	font-family: consolas;
 	overflow: hidden;
@@ -10,6 +13,7 @@ h1 {
 	font-size: 100px;
 	font-weight: 900;
 }
+/* Button styling */
 .button {
 	position: fixed;
 	left: 50%;
@@ -26,6 +30,7 @@ h1 {
 .button:hover {
 	padding: 30px;
 }
+/* Display the current high score */
 #highscore {
 	position: fixed;
 	width: 100%;

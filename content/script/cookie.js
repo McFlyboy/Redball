@@ -1,9 +1,11 @@
+//Generic function to set cookie
 function setCookie(name, value, daysValid) {
 	let date = new Date();
 	date.setTime(date.getTime() + (daysValid * 24 * 60 * 60 * 1000));
 	let exDate = date.toUTCString();
 	document.cookie = name + "=" + value + ";expires=" + exDate + ";path=/";
 }
+//Generic function to read cookie
 function getCookie(name) {
 	let decodedCookie = decodeURIComponent(document.cookie);
 	let cookieArray = decodedCookie.split(';');
