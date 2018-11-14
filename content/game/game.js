@@ -8,16 +8,7 @@ const scoreText = document.getElementById("score");
 const infoText = document.getElementsByTagName("h1")[0];
 const retryText = document.getElementById("retry");
 const highscoreText = document.getElementById("highscore");
-const backButton = document.getElementById("back-button");
-
-//Styling with colors
-document.body.style.backgroundColor = bgColor;
-document.body.style.color = textColor;
-target.style.backgroundColor = buttonColor;
-innerTimer.style.backgroundColor = bgColor;
-scoreText.style.color = innerTextColor;
-backButton.style.color = innerTextColor;
-backButton.style.backgroundColor = buttonColor;
+const backButton = document.getElementsByClassName("button")[0];
 
 //Declaration of variables
 const targetTime = 100;

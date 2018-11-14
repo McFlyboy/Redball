@@ -1,10 +1,3 @@
-/* Coloring is not done in CSS. It is automated in JavaScript */
-
-/* Disables scrolling */
-body {
-	overflow: hidden;
-	font-family: consolas;
-}
 h1 {
 	position: fixed;
 	width: 100%;
@@ -23,6 +16,7 @@ h1 {
 	-webkit-transform: translate(-50%, -50%);
 	left: 50%;
 	bottom: 50%;
+	background-color: #dd3344;
 	cursor: pointer;
 }
 /* Inner circle grows in size over time, making the illusion that the target is disappearing */
@@ -33,6 +27,7 @@ h1 {
 	-webkit-transform: translate(-50%, -50%);
 	left: 50%;
 	top: 50%;
+	background-color: #333333;
 }
 /* Displays current score inside the target */
 #score {
@@ -43,6 +38,7 @@ h1 {
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	font-size: 35px;
+	color: #ffff88;
 }
 /* Retry info-text */
 #retry {
@@ -66,18 +62,8 @@ h1 {
 }
 /* Button styling */
 #back-button {
-	position: fixed;
 	left: 50%;
 	top: 90%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
 	font-size: 25px;
-	text-decoration: none;
-	padding: 15px;
-	border-radius: 15px;
-	transition: 0.2s;
-	-webkit-transition: 0.2s;
-}
-#back-button:hover {
-	padding: 20px;
+	border: solid 15px #dd3344;
 }
