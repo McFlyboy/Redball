@@ -1,0 +1,20 @@
+.grid-container {
+	position: fixed;
+	display: inline-grid;
+	font-size: 30px;
+	grid-template-columns: 4rem 21rem 6rem auto;
+	grid-row-gap: 20px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.grid-item {
+	border-bottom: solid 2px #dddddd;
+}
+#back-button {
+	left: 50%;
+	top: 90%;
+	font-size: 25px;
+	border: solid 15px #dd3344;
+}
