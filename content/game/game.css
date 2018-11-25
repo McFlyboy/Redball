@@ -6,6 +6,7 @@ h1 {
 	font-size: 50px;
 	font-weight: 900;
 }
+
 /* Styling for the target the player is supposed to hit. Target is round */
 #target {
 	position: fixed;
@@ -19,6 +20,7 @@ h1 {
 	background-color: #dd3344;
 	cursor: pointer;
 }
+
 /* Inner circle grows in size over time, making the illusion that the target is disappearing */
 #inner-timer {
 	position: absolute;
@@ -29,6 +31,7 @@ h1 {
 	top: 50%;
 	background-color: #333333;
 }
+
 /* Displays current score inside the target */
 #score {
 	z-index: 1;
@@ -40,6 +43,7 @@ h1 {
 	font-size: 35px;
 	color: #ffff88;
 }
+
 /* Retry info-text */
 #retry {
 	position: fixed;
@@ -52,6 +56,7 @@ h1 {
 	font-size: 18px;
 	font-weight: 900;
 }
+
 /* Current high score-status */
 #highscore {
 	position: fixed;
@@ -60,6 +65,16 @@ h1 {
 	text-align: center;
 	top: 60%;
 }
+
+/* Button styling */
+#upload-button {
+	left: 50%;
+	top: 70%;
+	font-size: 25px;
+	border: solid 15px #dd3344;
+	display: none;
+}
+
 /* Button styling */
 #back-button {
 	left: 50%;

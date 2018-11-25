@@ -8,7 +8,8 @@ const scoreText = document.getElementById("score");
 const infoText = document.getElementsByTagName("h1")[0];
 const retryText = document.getElementById("retry");
 const highscoreText = document.getElementById("highscore");
-const backButton = document.getElementsByClassName("button")[0];
+const uploadButton = document.getElementById("upload-button");
+const backButton = document.getElementById("back-button");
 
 //Declaration of variables
 const targetTime = 100;
@@ -41,6 +42,7 @@ function hitTarget() {
 		infoText.innerHTML = "";
 		retryText.innerHTML = "";
 		highscoreText.innerHTML = "";
+		uploadButton.style.display = "none";
 		backButton.style.display = "none";
 		score = 0;
 	}
@@ -71,12 +73,14 @@ function setGameOver() {
 	if(lastHighscore === "") {
 		setCookie("highscore", score, 30);
 		highscoreText.innerHTML = "New high-score!";
+		uploadButton.style.display = "block";
 	}
 	else {
 		let lastHighscoreInt = parseInt(lastHighscore);
 		if(score > lastHighscoreInt) {
 			setCookie("highscore", score, 30);
 			highscoreText.innerHTML = "New high-score!";
+			uploadButton.style.display = "block";
 		}
 		else {
 			highscoreText.innerHTML = "High-score: " + lastHighscoreInt;
