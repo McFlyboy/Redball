@@ -11,13 +11,14 @@ body {
 
 /* Button styling */
 .button {
+	all: unset;
 	position: fixed;
 	color: #ffff88;
 	background-color: #dd3344;
-	text-decoration: none;
 	border-radius: 10px;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
+	cursor: pointer;
 }
 .button:before {
 	content: "";
